@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* FONDO ESTILO BATALLA */
+section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(circle at top right, #ff4d00 0%, #1a1a1a 40%, #0a0a0a 100%);
+}
+
+/* CONTENEDOR CENTRAL */
+.container {
+    height: 70%;
+    width: 33%;
+    background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+    border: 3px solid #00ff88;
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 20px #00ff88,
+        0 0 40px rgba(255, 77, 0, 0.6);
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGEN */
+.image-box {
+    width: 100%;
+    height: 70%;
+}
+
+.actual-img,
+.text-one,
+.yes-no {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actual-img {
+    height: 80%;
+}
+
+.gif {
+    height: 90%;
+    width: 70%;
+}
+
+/* TEXTO */
+.text-one {
+    height: 20%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #00ff88;
+    text-shadow:
+        0 0 8px #00ff88,
+        0 0 15px rgba(255, 77, 0, 0.6);
+}
+
+/* CONTENEDOR BOTONES */
+.yes-no {
+    height: 30%;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* BOTÓN SÍ (DEKU - VERDE ENERGÍA) */
+.yes {
+    height: 60%;
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid #00ff88;
+    background: linear-gradient(135deg, #006b3c, #00ff88);
+    font-size: 6vh;
+    font-weight: bold;
+    cursor: pointer;
+
+    box-shadow:
+        0 0 15px #00ff88,
+        0 0 30px rgba(0, 255, 136, 0.8);
+
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* BOTÓN NO (BAKUGO - EXPLOSIVO) */
+.no {
+    height: 60%;
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid #ff4d00;
+    background: linear-gradient(135deg, #5a0a00, #ff4d00);
+    font-size: 6vh;
+    font-weight: bold;
+    cursor: pointer;
+
+    box-shadow:
+        0 0 15px #ff4d00,
+        0 0 30px rgba(255, 77, 0, 0.8);
+
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* HOVER EFECTOS */
+.yes:hover {
+    transform: scale(1.08);
+    box-shadow:
+        0 0 25px #00ff88,
+        0 0 50px #00ff88;
+}
+
+.no:hover {
+    transform: scale(0.95);
+    box-shadow:
+        0 0 25px #ff4d00,
+        0 0 50px #ff4d00;
+}
+
+/* BOTÓN FINAL (cuando se convierte en link) */
+.boton-final {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1025px) {
+    .container {
+        width: 95%;
+        height: 80%;
+    }
+
+    .gif {
+        width: 80%;
+    }
+}
